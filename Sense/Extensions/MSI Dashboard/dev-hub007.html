@@ -93,19 +93,17 @@
 								<i class="fa fa-compass" aria-hidden="true"></i>
 							</div> -->
 							<div class="menu-option">
+								Flow Sensor
+							</div>
+						</paper-item>
+						<paper-item>
+						<!--	<div class="icon">
+								<i class="fa fa-file-text" aria-hidden="true"></i>
+							</div> -->
+							<div class="menu-option">
 								Command Areas
 							</div>
 						</paper-item>
-						<!--
-						<paper-item>
-							<div class="icon">
-								<i class="fa fa-file-text" aria-hidden="true"></i>
-							</div>
-							<div class="menu-option">
-								Report
-							</div>
-						</paper-item>
-						-->
 
 					</paper-menu>
 				</div>
@@ -137,16 +135,12 @@
 							  </qliksense-card>
 							</div>
 							
-							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:25px">
+							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:60px">
 							  <div class="kpi green-10 qvobject" id="KPI-01"></div>
 							</div>
 							
-							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:-15px">
+							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:30px">
 							  <div class="kpi green-10 qvobject" id="KPI-02"></div>
-							</div>
-							
-							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:-15px">
-							  <div class="kpi green-10 qvobject" id="KPI-03"></div>
 							</div>
 						  </div>
 
@@ -185,7 +179,7 @@
 						<!-- Sensor Widgets (Sensor &amp; Flow) Started Here -->	
 						  <div class="row">
 							<div class="col-xs-12" style="margin-top:-35px">
-							  <qliksense-card content-height="300px">
+							  <qliksense-card content-height="350px">
 						<!--	  <div class="card-title qvt-visualization-title">Sensor &amp; Flow</div>	-->
 								<div class="with-title qvobject" id="QV1-04s" data-toggle="modal" data-target="#myModal"></div>
 							  </qliksense-card>
@@ -194,10 +188,9 @@
 						<!-- Sensor Widgets (Sensor &amp; Flow) Ended Here -->	
 						  				 
 										
-										
-										
+															
 						<!-- Flow Rate m3/sec Chart Here -->
-						
+						<!--
 						  <div class="row">
 							<div class="col-xs-12" style="margin-top:-10px">
 							  <qliksense-card content-height="450px">
@@ -206,24 +199,22 @@
 							  </qliksense-card>
 							</div>
 						  </div>
-						  
+						  --
 						<!-- Flow Rate m3/sec  Chart Here Ended Here -->	
 					
 
 
-
-					<!--<div class="row">-->
-						 <!-- Flow Rate m3/sec Chart Here -->	
-						 
+<!--
+					<div class="row">	
 							<div class="col-xs-12" style="margin-top:-35px">
 							  <qliksense-card content-height="300px">
 								<div class="card-title qvt-visualization-title">Water Level (cm)</div>
 								<div class="with-title qvobject" id="QV1-03"></div>
 							  </qliksense-card>
 							</div>
-							
+					</div>	
+					-->
 						 <!-- Flow Rate m3/sec Chart Here -->	
-					
 						
 						
 						<!-- Reload Button -->	
@@ -240,29 +231,98 @@
 
 					<div class="paper-body">
 						<div class="container-fluid">
+							<!-- A .qvplaceholder will become a droppable area in the dev-hub -->
+							<!-- Each .qvplaceholder must have a unique id -->
+							<!-- These .qvplaceholder objects below have an extra class, .kpi, which applies some simple styles intended for kpi objects -->
+						
+			
+							
+
+						  <div class="row">
+							<div class="col-xs-12 col-sm-8" style="margin-top:-20px">
+							  <!-- Placing a .qvplaceholder within a <qliksense-card> will create a cardified object -->
+							  <qliksense-card content-height="280px">
+								<!-- Adding the class .with-title to a .qvplaceholder within a <qliksense-card> will apply special styles intended for visualizations with titles -->
+								<div class="with-title qvobject" id="QV2-01" data-toggle="modal" data-target="#myModal"></div>
+							  </qliksense-card>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:60px">
+							  <div class="kpi green-10 qvobject" id="KPI-03"></div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-md-3" style="margin-top:30px">
+							  <div class="kpi green-10 qvobject" id="KPI-04"></div>
+							</div>
+						  </div>
+						
+						  <div class="row">
+							<div class="col-xs-8" style="margin-top:-25px">
+							  <qliksense-card content-height="300px">
+								<div class="card-title qvt-visualization-title"> Flow Rate m3/sec</div>
+								<div class="with-title qvobject" id="QV2-06s"></div>
+							  </qliksense-card>
+							</div>
+							<div class="col-xs-4" style="margin-top:-25px">
+							  <qliksense-card content-height="300px">
+						<!--	  <div class="card-title qvt-visualization-title">Sensor &amp; Flow</div>	-->
+								<div class="with-title qvobject" id="QV2-04s" data-toggle="modal" data-target="#myModal"></div>
+							  </qliksense-card>
+							</div>
+						  </div>
+
+					<div class="row">
+						 <!-- Water Level Chart Here -->	
+						 
+							<div class="col-xs-8" style="margin-top:-15px">
+							  <qliksense-card content-height="300px">
+								<div class="card-title qvt-visualization-title">Water Level (cm)</div>
+								<div class="with-title qvobject" id="QV2-03"></div>
+							  </qliksense-card>
+							</div>
+					</div>		
+						 <!-- Flow Rate m3/sec Chart Here -->	
+					
+						
+						
+						<!-- Reload Button -->	
+				      	<button id="btnReload" type="button" style="position:fixed; bottom:10px; right:40px; z-index:120;" class="btn btn-info btn-xs">Reload Data</button>
+						 	
+				    <!--</div>-->
+						  
+	
+
+							
+							
+						</div>
+					</div>
+
+
+					<div class="paper-body">
+						<div class="container-fluid">
 							<div class="row">
 								<div class="col-xs-10 col-sm-4 col-md-2">
 									<div class="row">
-							  			<div class="kpi green-10 qvobject" id="KPI-04" style="margin-top:75px"></div>
-										<div class="kpi green-10 qvobject" id="KPI-05" style="margin-top:25px"></div>
+							  			<div class="kpi green-10 qvobject" id="KPI-05" style="margin-top:75px"></div>
 										<div class="kpi green-10 qvobject" id="KPI-06" style="margin-top:25px"></div>
+										<div class="kpi green-10 qvobject" id="KPI-07" style="margin-top:25px"></div>
 									</div>
 								</div>
 							
 								<div class="col-xs-10 col-sm-6" style="margin-top:-15px">
 									<qliksense-card content-height="400px">
-										<div class="with-title qvobject" id="QV2-01"></div>
+										<div class="with-title qvobject" id="QV3-01"></div>
 									</qliksense-card>
 								</div>
 								<div class="row">
 								 		<div class="col-xs-10 col-sm-4" style="margin-top:-15px">
 											<qliksense-card content-height="125px">
-												<div class="with-title qvobject" id="QV2-02"></div>
+												<div class="with-title qvobject" id="QV3-02"></div>
 											</qliksense-card>
 										</div>
 										<div class="col-xs-10 col-sm-4" style="margin-top:-15px">
 											<qliksense-card content-height="250px">
-												<div class="with-title qvobject" id="QV2-02-2"></div>
+												<div class="with-title qvobject" id="QV3-02-2"></div>
 											</qliksense-card>
 										</div>
 								</div>
@@ -270,59 +330,34 @@
 							<div class="row">
 								<div class="col-xs-12 col-sm-4" style="margin-top:-15px">
 									<qliksense-card content-height="125px">
-										<div class="with-title qvobject" id="QV2-03"></div>
-									</qliksense-card>
-								</div>
-								<div class="col-xs-12 col-sm-4" style="margin-top:-15px">
-									<qliksense-card content-height="125px">
-										<div class="with-title qvobject" id="QV2-04"></div>
-									</qliksense-card>
-								</div>
-								<div class="col-xs-12 col-sm-4" style="margin-top:-15px">
-									<qliksense-card content-height="125px">
-										<div class="with-title qvobject" id="QV2-05"></div>
-									</qliksense-card>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-sm-4" style="margin-top:-60px">
-									<qliksense-card content-height="250px">
-										<div class="with-title qvobject" id="QV2-03-2"></div>
-									</qliksense-card>
-								</div>
-								<div class="col-xs-12 col-sm-4" style="margin-top:-60px">
-									<qliksense-card content-height="250px">
-										<div class="with-title qvobject" id="QV2-04-2"></div>
-									</qliksense-card>
-								</div>
-								<div class="col-xs-12 col-sm-4" style="margin-top:-60px">
-									<qliksense-card content-height="250px">
-										<div class="with-title qvobject" id="QV2-05-2"></div>
-									</qliksense-card>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="paper-body">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-xs-12 col-sm-6">
-									<qliksense-card content-height="300px">
-										<div class="with-title qvplaceholder" id="QV3-01"></div>
-									</qliksense-card>
-								</div>
-								<div class="col-xs-12 col-sm-6">
-									<qliksense-card content-height="300px">
-										<div class="with-title qvplaceholder" id="QV3-02"></div>
-									</qliksense-card>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<qliksense-card content-height="450px">
-										<div class="card-title qvt-visualization-title">Water Level</div>
 										<div class="with-title qvobject" id="QV3-03"></div>
+									</qliksense-card>
+								</div>
+								<div class="col-xs-12 col-sm-4" style="margin-top:-15px">
+									<qliksense-card content-height="125px">
+										<div class="with-title qvobject" id="QV3-04"></div>
+									</qliksense-card>
+								</div>
+								<div class="col-xs-12 col-sm-4" style="margin-top:-15px">
+									<qliksense-card content-height="125px">
+										<div class="with-title qvobject" id="QV3-05"></div>
+									</qliksense-card>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-4" style="margin-top:-60px">
+									<qliksense-card content-height="250px">
+										<div class="with-title qvobject" id="QV3-03-2"></div>
+									</qliksense-card>
+								</div>
+								<div class="col-xs-12 col-sm-4" style="margin-top:-60px">
+									<qliksense-card content-height="250px">
+										<div class="with-title qvobject" id="QV3-04-2"></div>
+									</qliksense-card>
+								</div>
+								<div class="col-xs-12 col-sm-4" style="margin-top:-60px">
+									<qliksense-card content-height="250px">
+										<div class="with-title qvobject" id="QV3-05-2"></div>
 									</qliksense-card>
 								</div>
 							</div>
@@ -376,7 +411,7 @@
    <div class="modal-content">
 	 <div class="modal-header">
 	   <button type="button" class="close" data-dismiss="modal">×</button>
-	   <h4 class="modal-title">K045-1A - Info</h4>
+	   <!-- <h4 class="modal-title">K045-1A - Info</h4> -->
 	 </div>
 	 <div class="modal-body">
 	   
